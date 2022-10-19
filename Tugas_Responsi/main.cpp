@@ -6,7 +6,7 @@ using namespace std;
 
 void push(char);
 char pop();
-string in2prefix(string);
+string alphabet(string);
 int priority (char);
 char stk[MAX];
 int top = -1;
@@ -51,7 +51,7 @@ char pop(){
     return 0;
 }
 
-string in2prefix(string infix){
+string alphabet(string infix){
     int i = 0;
     string pst = "";
 
@@ -117,7 +117,7 @@ void cetak(){
 int main(){
     string infix,prefix;
     cin>>infix;
-    prefix = in2prefix(infix);
+    prefix = alphabet(infix);
     cetak();
     return 0;
 }
